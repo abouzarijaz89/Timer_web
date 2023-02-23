@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    * {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-image: url("snow.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+}
+.countdown-container{
+display: flex;
+}
+h1{
+    font-size: 4rem;
+    /* margin-top: -5rem; */
+    font-weight: normal;
+    margin-top: 5rem;
+}
+.big-text{
+    font-weight: bold;
+    font-size: 6rem;
+    line-height: 1;
+    margin: 0 2rem;
+}
+.countdown-el{
+    text-align: center;
+}
+.countdown-el span {
+font-size: 1.2rem;
+}
+</style>
+
+    <title>Count_Down Timer</title>
+</head>
+<body>
+    <h1>New Year Night</h1>
+    <div class="countdown-container">
+        <div class="countdown-el days-container">
+            <p class="big-text" id="days">0</p>
+            <span>Days</span>
+        </div>
+        <div class="countdown-el hours-container">
+            <p class="big-text" id="hours">0</p>
+            <span>Hours</span>
+        </div>
+        <div class="countdown-el mins-container">
+            <p class="big-text" id="minutes">0</p>
+            <span>Minutes</span>
+        </div>
+        <div class="countdown-el sec-container">
+            <p class="big-text" id="seconds">0</p>
+            <span>Seconds</span>
+        </div>
+    </div>
+</body>
+</html>
